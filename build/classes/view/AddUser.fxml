@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="parentUserAdd" prefHeight="309.0" prefWidth="412.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AddUserController">
+   <children>
+      <ImageView fitHeight="309.0" fitWidth="485.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/custom-library.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="20.0" layoutY="37.0" opacity="0.79" prefHeight="258.0" prefWidth="372.0" style="-fx-background-radius: 30; -fx-background-color: #d00721;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="213.0" layoutY="216.0" onAction="#Confirm" ripplerFill="TRANSPARENT" style="-fx-background-color: white; -fx-background-radius: 30;" text="CONFIRMER" />
+            <JFXTextField fx:id="Username" focusColor="WHITE" layoutX="160.0" layoutY="51.0" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE" />
+            <Label layoutX="35.0" layoutY="14.0" prefHeight="21.0" prefWidth="318.0" text="ENTREZ LES INFORMATIONS DE L'USAGER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="95.0" text="Mot de Passe :" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="55.0" text="Nom d'utilisateur :" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="Password" focusColor="WHITE" layoutX="160.0" layoutY="91.0" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="14.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-flèche-gauche-50.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="14.0" layoutY="215.0" onAction="#goBack" text=" " />
+            <Label layoutX="85.0" layoutY="135.0" text="Addresse :" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="Address" focusColor="WHITE" layoutX="160.0" layoutY="133.0" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE" />
+            <Label layoutX="83.0" layoutY="176.0" text="Catégorie :" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="JComboCategory" focusColor="WHITE" layoutX="159.0" layoutY="174.0" prefHeight="25.0" prefWidth="135.0" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" stylesheets="@../css/Textfield.css" unFocusColor="WHITE">
+               <styleClass>
+                  <String fx:value="cell" />
+                  <String fx:value="combo-box" />
+               </styleClass>
+            </JFXComboBox>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="23.0" fitWidth="20.0" layoutX="392.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-cross-64.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="392.0" layoutY="2.0" onMouseClicked="#CloseApp" prefHeight="17.0" prefWidth="20.0" text=" " />
+      <ImageView fitHeight="23.0" fitWidth="20.0" layoutX="373.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-minus-64.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="373.0" layoutY="2.0" onMouseClicked="#MinApp" prefHeight="17.0" prefWidth="20.0" text=" " />
+   </children>
+</AnchorPane>

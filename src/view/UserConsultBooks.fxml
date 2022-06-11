@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="parentUsrConsult" prefHeight="331.0" prefWidth="442.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.UserConsultBooksController">
+   <children>
+      <ImageView fitHeight="333.0" fitWidth="463.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/custom-library.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="11.0" layoutY="28.0" opacity="0.99" prefHeight="284.0" prefWidth="426.0" style="-fx-background-radius: 30; -fx-background-color: #d00721;" AnchorPane.topAnchor="28.0">
+         <children>
+            <Label layoutX="107.0" layoutY="17.0" prefHeight="21.0" prefWidth="221.0" text="INFORMATIONS SUR LE LIVRE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="20.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-flèche-gauche-50.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="20.0" layoutY="14.0" onAction="#goBack" text=" " />
+            <Label layoutX="207.0" layoutY="91.0" text="Auteur :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="221.0" layoutY="71.0" text="Titre :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="206.0" layoutY="111.0" text="Editeur :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="187.0" layoutY="173.0" text="Disponible :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="image" fitHeight="213.0" fitWidth="185.0" layoutX="15.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="220.0" layoutY="51.0" text="ISBN :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="212.0" layoutY="131.0" text="Année :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="ISBN" layoutX="263.0" layoutY="51.0" textFill="WHITE" />
+            <Label fx:id="Title" layoutX="263.0" layoutY="71.0" textFill="WHITE" />
+            <Label fx:id="Author" layoutX="263.0" layoutY="91.0" textFill="WHITE" />
+            <Label fx:id="Publisher" layoutX="263.0" layoutY="111.0" textFill="WHITE" />
+            <Label fx:id="Year" layoutX="273.0" layoutY="131.0" textFill="WHITE" />
+            <Label fx:id="Availability" layoutX="270.0" layoutY="173.0" textFill="WHITE" />
+            <Label layoutX="213.0" layoutY="150.0" text="Rayon :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="Aisle" layoutX="274.0" layoutY="150.0" textFill="WHITE" />
+            <JFXComboBox fx:id="JComboType" focusColor="WHITE" layoutX="255.0" layoutY="209.0" prefHeight="25.0" prefWidth="63.0" promptText="Type" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" styleClass="cell" stylesheets="@../css/Textfield.css" unFocusColor="WHITE" />
+            <Label layoutX="205.0" layoutY="213.0" text="Filtrer :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="JComboData" focusColor="WHITE" layoutX="325.0" layoutY="209.0" prefHeight="25.0" prefWidth="79.0" promptText="Données" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" styleClass="cell" stylesheets="@../css/Textfield.css" unFocusColor="WHITE" />
+            <JFXButton buttonType="RAISED" layoutX="324.0" layoutY="243.0" onAction="#Emprunter" prefHeight="25.0" prefWidth="87.0" ripplerFill="TRANSPARENT" style="-fx-background-color: white; -fx-background-radius: 30;" text="EMPRUNTER" />
+            <JFXButton buttonType="RAISED" layoutX="246.0" layoutY="243.0" onAction="#Afficher" prefHeight="25.0" prefWidth="73.0" ripplerFill="TRANSPARENT" style="-fx-background-color: white; -fx-background-radius: 30;" text="AFFICHER" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="23.0" fitWidth="20.0" layoutX="420.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-cross-64.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="420.0" layoutY="2.0" onMouseClicked="#CloseApp" prefHeight="17.0" prefWidth="20.0" text=" " />
+      <ImageView fitHeight="23.0" fitWidth="20.0" layoutX="401.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-minus-64.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="401.0" layoutY="2.0" onMouseClicked="#MinApp" prefHeight="17.0" prefWidth="20.0" text=" " />
+   </children>
+</AnchorPane>

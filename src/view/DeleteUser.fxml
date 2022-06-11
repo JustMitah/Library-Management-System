@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="parentUserRemove" prefHeight="309.0" prefWidth="412.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.DeleteUserController">
+   <children>
+      <ImageView fitHeight="309.0" fitWidth="485.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/custom-library.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="80.0" layoutY="15.0" opacity="0.79" prefHeight="283.0" prefWidth="253.0" style="-fx-background-radius: 30; -fx-background-color: #d00721;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="154.0" layoutY="244.0" onAction="#Delete" ripplerFill="TRANSPARENT" style="-fx-background-color: white; -fx-background-radius: 30;" text="SUPPRIMER" />
+            <Label layoutX="23.0" layoutY="14.0" prefHeight="21.0" prefWidth="216.0" text="SÉLECTIONER L'UTILISATEUR" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TableView fx:id="Table_user" layoutX="29.0" layoutY="62.0" prefHeight="181.0" prefWidth="200.0" stylesheets="@../css/TableCSS.css">
+               <columns>
+                  <TableColumn fx:id="col_ID" prefWidth="75.0" text="PersonID" />
+                  <TableColumn fx:id="col_Nom" prefWidth="124.0" text="Nom" />
+               </columns>
+            </TableView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="129.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-flèche-gauche-50.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="129.0" layoutY="244.0" onAction="#goBack" text=" " />
+            <Label layoutX="84.0" layoutY="35.0" prefHeight="21.0" prefWidth="109.0" text="A SUPPRIMER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="23.0" fitWidth="20.0" layoutX="392.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-cross-64.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="392.0" layoutY="2.0" onMouseClicked="#CloseApp" prefHeight="17.0" prefWidth="20.0" text=" " />
+      <ImageView fitHeight="23.0" fitWidth="20.0" layoutX="373.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-minus-64.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="373.0" layoutY="2.0" onMouseClicked="#MinApp" prefHeight="17.0" prefWidth="20.0" text=" " />
+   </children>
+</AnchorPane>

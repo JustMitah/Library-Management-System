@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="parentLibAdd" prefHeight="246.0" prefWidth="332.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ChooseForDetailController">
+   <children>
+      <ImageView fitHeight="249.0" fitWidth="377.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/custom-library.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="11.0" layoutY="27.0" opacity="0.79" prefHeight="202.0" prefWidth="310.0" style="-fx-background-radius: 30; -fx-background-color: #d00721;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="217.0" layoutY="70.0" onAction="#AfficherSelonTitre" prefHeight="25.0" prefWidth="73.0" ripplerFill="TRANSPARENT" style="-fx-background-color: white; -fx-background-radius: 30;" text="AFFICHER" />
+            <Label layoutX="50.0" layoutY="14.0" prefHeight="21.0" prefWidth="248.0" text="SÉLECTIONER LE TITRE OU L'ISBN" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-flèche-gauche-50.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="14.0" layoutY="12.0" onAction="#goBack" text=" " />
+            <JFXComboBox fx:id="JComboTitle" focusColor="WHITE" layoutX="74.0" layoutY="70.0" prefHeight="25.0" prefWidth="130.0" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" styleClass="cell" stylesheets="@../css/Textfield.css" unFocusColor="WHITE" />
+            <Label layoutX="24.0" layoutY="74.0" text="Titre :" textFill="WHITE" />
+            <JFXButton buttonType="RAISED" layoutX="217.0" layoutY="117.0" onAction="#AfficherSelonISBN" prefHeight="25.0" prefWidth="73.0" ripplerFill="TRANSPARENT" style="-fx-background-color: white; -fx-background-radius: 30;" text="AFFICHER" />
+            <JFXComboBox fx:id="JComboISBN" focusColor="WHITE" layoutX="74.0" layoutY="117.0" prefHeight="25.0" prefWidth="130.0" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" styleClass="cell" stylesheets="@../css/Textfield.css" unFocusColor="WHITE" />
+            <Label layoutX="24.0" layoutY="121.0" text="ISBN :" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="23.0" fitWidth="20.0" layoutX="312.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-cross-64.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="312.0" layoutY="2.0" onMouseClicked="#CloseApp" prefHeight="17.0" prefWidth="20.0" text=" " />
+      <ImageView fitHeight="23.0" fitWidth="20.0" layoutX="293.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-minus-64.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="293.0" layoutY="2.0" onMouseClicked="#MinApp" prefHeight="17.0" prefWidth="20.0" text=" " />
+   </children>
+</AnchorPane>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="parentLibAdd" prefHeight="309.0" prefWidth="412.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AddBookController">
+   <children>
+      <ImageView fitHeight="309.0" fitWidth="485.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/custom-library.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="80.0" layoutY="15.0" opacity="0.79" prefHeight="283.0" prefWidth="253.0" style="-fx-background-radius: 30; -fx-background-color: #d00721;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="93.0" layoutY="246.0" onAction="#Confirm" ripplerFill="TRANSPARENT" style="-fx-background-color: white; -fx-background-radius: 30;" text="CONFIRMER" />
+            <JFXTextField fx:id="bookID" focusColor="WHITE" layoutX="86.0" layoutY="74.0" promptText="10 Chiffres" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE" />
+            <Label layoutX="11.0" layoutY="15.0" prefHeight="20.0" prefWidth="236.0" text="ENTREZ LES CARACTÉRISTIQUES" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="112.0" text="Titre :" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="76.0" text="ISBN : " textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="title" focusColor="WHITE" layoutX="86.0" layoutY="110.0" promptText="Titre du livre" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE" />
+            <Label layoutX="24.0" layoutY="146.0" text="Auteur :" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="author" focusColor="WHITE" layoutX="86.0" layoutY="144.0" promptText="Auteur du livre" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE" />
+            <Label layoutX="26.0" layoutY="180.0" text="Année :" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="year" focusColor="WHITE" layoutX="86.0" layoutY="178.0" promptText="Année de l'édition" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE" />
+            <Label layoutX="94.0" layoutY="36.0" prefHeight="21.0" prefWidth="73.0" text="DU LIVRE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="211.0" text="Éditeur :" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="publisher" focusColor="WHITE" layoutX="86.0" layoutY="209.0" promptText="Nom de l'éditeur" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="66.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-flèche-gauche-50.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="66.0" layoutY="246.0" onAction="#goBack" text=" " />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="23.0" fitWidth="20.0" layoutX="392.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-cross-64.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="392.0" layoutY="2.0" onMouseClicked="#CloseApp" prefHeight="17.0" prefWidth="20.0" text=" " />
+      <ImageView fitHeight="23.0" fitWidth="20.0" layoutX="373.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-minus-64.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="373.0" layoutY="2.0" onMouseClicked="#MinApp" prefHeight="17.0" prefWidth="20.0" text=" " />
+   </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 17 Nov 2021, 15:06:28
+    Author     : Kazwell
+*/
+
+#text{
+    -fx-background-color: transparent;
+}
+.combo-box .cell:selected {
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: white;
+}

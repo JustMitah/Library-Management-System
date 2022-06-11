@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="SIB.jnlp">
+  <information>
+    <title>SIB</title>
+    <vendor>Kazwell</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="SIB.jar" size="676940" download="eager" />
+    <jar href="lib\jakarta.activation-1.2.2.jar" size="68453" download="eager" />
+    <jar href="lib\jakarta.activation-api-1.2.2.jar" size="46613" download="eager" />
+    <jar href="lib\jakarta.activation.jar" size="62731" download="eager" />
+    <jar href="lib\jakarta.annotation-api-1.3.5.jar" size="25058" download="eager" />
+    <jar href="lib\jakarta.json-api-1.1.6.jar" size="43361" download="eager" />
+    <jar href="lib\jakarta.jws-api-2.1.0.jar" size="15558" download="eager" />
+    <jar href="lib\jakarta.servlet-api-4.0.4.jar" size="82973" download="eager" />
+    <jar href="lib\jakarta.ws.rs-api-2.1.6.jar" size="140376" download="eager" />
+    <jar href="lib\jakarta.xml.bind-api-2.3.3.jar" size="115638" download="eager" />
+    <jar href="lib\jakarta.xml.bind-api.jar" size="129000" download="eager" />
+    <jar href="lib\jakarta.xml.soap-api-1.4.2.jar" size="36922" download="eager" />
+    <jar href="lib\jakarta.xml.ws-api-2.3.3.jar" size="57697" download="eager" />
+    <jar href="lib\javax.annotation-api.jar" size="26430" download="eager" />
+    <jar href="lib\javax.xml.soap-api.jar" size="46111" download="eager" />
+    <jar href="lib\jaxb-api.jar" size="125631" download="eager" />
+    <jar href="lib\jaxb-core.jar" size="255502" download="eager" />
+    <jar href="lib\jaxb-impl.jar" size="963660" download="eager" />
+    <jar href="lib\jaxb-jxc.jar" size="138671" download="eager" />
+    <jar href="lib\jaxb-xjc.jar" size="1992830" download="eager" />
+    <jar href="lib\jaxws-api.jar" size="52437" download="eager" />
+    <jar href="lib\jaxws-rt.jar" size="2613698" download="eager" />
+    <jar href="lib\jaxws-tools.jar" size="903852" download="eager" />
+    <jar href="lib\jfoenix-8.0.10.jar" size="2710207" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.27.jar" size="2587146" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="SIB"  name="SIB" />
+  <update check="always"/>
+</jnlp>
